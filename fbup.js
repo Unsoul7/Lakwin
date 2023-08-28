@@ -29,7 +29,6 @@ const firebaseConfig = {
         console.log('Upload progress: ' + progress + '%');
         localStorage.clear()
         alert('Your Order is Placed, You will get your reward soon')
-        window.open('index.html','_self')
       },
       (error) => {
         // Handle errors
@@ -38,6 +37,7 @@ const firebaseConfig = {
       () => {
         // Upload completed successfully
         console.log('File uploaded successfully');
+        window.open('index.html','_self')
         // You can add more actions here, such as showing a success message
       }
     );
