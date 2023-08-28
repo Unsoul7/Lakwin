@@ -10,7 +10,7 @@ totalamount = 0
 function shownav(){
     var cl = document.getElementById('navitems')
     // console.log(cl.classList)
-    cl.classList.toggle('hidenav')
+    cl.classList.toggle('top-0')
 }
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwMlg5mXirNd_T2YvfCQzfxk9Bl7korDom9XKD8yZehcsVaTgaCNZ6Jp-8nLi4avPmi/exec'
@@ -37,14 +37,14 @@ const addnum = (e) => {
   numf.setAttribute('type','number')
   numf.setAttribute('min','1')
   numf.setAttribute('max','100')
-  numf.setAttribute('class','numf numbers')
+  numf.setAttribute('class','border w-1/2 h-10 px-6 my-2 numbers')
   numf.setAttribute('name','Numbers')
   numf.setAttribute('placeholder','Number')
 
 
   const amountf = document.createElement('input')
   amountf.setAttribute('type','number')
-  amountf.setAttribute('class','numf amount')
+  amountf.setAttribute('class','border w-1/2 h-10 px-6 my-2 amount')
   amountf.setAttribute('name','Amount')
   amountf.setAttribute('placeholder','Amount')
 
@@ -101,14 +101,14 @@ function updateCountdown() {
 
   if (timeDifference <= 0) {
     clearInterval(countdownInterval);
-    countdownElement.innerHTML = "<a class='count-text' href='/todaywinners.html'>See Winner List</a>";
+    countdownElement.innerHTML = "<a class='text-2xl text-center text-red-500' href='/todaywinners.html'>See Winner List</a>";
   } else {
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-    countdownElement.innerHTML = `<h2 class='count-text'>Next Reward List: ${hours}h ${minutes}m ${seconds}s</h2>`;
+    countdownElement.innerHTML = `<h2 class='text-2xl text-center text-red-500'>Next Reward List: ${hours}h ${minutes}m ${seconds}s</h2>`;
 
   }
 }

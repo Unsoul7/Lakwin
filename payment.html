@@ -5,23 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
     <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Get Your Chance</title>
 </head>
 
 <body class="flex flex-col min-h-full">
-
-    <nav class="nav">
-        <img onclick="shownav()" class="w-9 absolute left-5 my-auto" src="menu.png" alt="">
-        <a href="/index.html"><img class="w-36" src="/logo.png" alt=""></a>
+    <nav class="z-10 flex justify-center items-center bg-white sticky top-0 flex-row h-16 border-b">
+        <img class="w-9 absolute left-5 my-auto" onclick="shownav()" id="ham" src="menu.png" alt="">
+        <a href="/index.html"> <img class="w-36" src="/logo.png" alt=""></a>
     </nav>
-
-    <ul id="navitems" class="shownav hidenav">
+    <ul id="navitems"  class="fixed mt-16 left-0 w-full h-auto border py-5 text-center transition-all z-0 bg-white -top-full">
         <li class="py-3"><a href="/index.html">Home</a></li>
         <li class="py-3"><a href="/payment.html">Start Earning</a></li>
         <li class="py-3"><a href="/todaywinners.html">Today Winners</a></li>
-        <li class="py-3">Past Winners</li>
         <li class="py-3">About</li>
     </ul>
 
@@ -33,8 +31,8 @@
         <input type="text" name="State" required id="state" class="border w-full h-10 px-6 my-2" placeholder="State">
         <div id="nafields">
             <div class="flex">
-                <input type="number" min="1" required max="100" name="Numbers" class="numf numbers" placeholder="Number">
-                <input type="number" required name="Amount" class="numf amount" placeholder="Amount">
+                <input type="number" min="1" required max="100" name="Numbers" class="border w-1/2 h-10 px-6 my-2 numbers" placeholder="Number">
+                <input type="number" required name="Amount" class="border w-1/2 h-10 px-6 my-2 amount" placeholder="Amount">
             </div>
             
         </div>
@@ -51,7 +49,8 @@
             <a class="text-red-500  text-sm" href="">Terms and Services</a>
         </div>
     </footer>
-    <script type="module" src="/script.js"></script>
+    <script src="/script.js"></script>
+
 </body>
 
 </html>
