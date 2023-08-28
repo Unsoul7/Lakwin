@@ -24,7 +24,7 @@ const senddata = (e) => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: JSON.stringify(data)})
     .then(response => alert("Your Order has been placed" ))
-    .then(() => { window.open('/paymentpage.html','_self')})
+    .then(() => { window.open('paymentpage.html','_self')})
     .catch(error => console.error('Error!', error.message))
   }
 }
@@ -101,7 +101,7 @@ function updateCountdown() {
 
   if (timeDifference <= 0) {
     clearInterval(countdownInterval);
-    countdownElement.innerHTML = "<a class='text-2xl text-center text-red-500' href='/todaywinners.html'>See Winner List</a>";
+    countdownElement.innerHTML = "<a class='text-2xl text-center text-red-500' href='todaywinners.html'>See Winner List</a>";
   } else {
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
