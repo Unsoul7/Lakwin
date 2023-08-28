@@ -29,7 +29,7 @@ const firebaseConfig = {
         console.log('Upload progress: ' + progress + '%');
         localStorage.clear()
         alert('Your Order is Placed, You will get your reward soon')
-        window.open('/','_self')
+        window.open('index.html','_self')
       },
       (error) => {
         // Handle errors
