@@ -89,7 +89,7 @@ for(let i in nums){
 }
 
 const targetDate = new Date(); // Month is 0-based (0 = January)
-targetDate.setDate(targetDate.getDate()); // Set to the next day
+targetDate.setDate(targetDate.getDate()+1); // Set to the next day
 targetDate.setHours(12, 0, 0, 0);
 // Update the countdown every second
 const countdownElement = document.getElementById('countdown');
