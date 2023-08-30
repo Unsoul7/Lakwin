@@ -71,7 +71,10 @@ const selectall = (e) => {
   var name = document.getElementById('name').value
   var phone = document.getElementById('phone').value
   var mail =  document.getElementById('mail').value
-  var state = document.getElementById('state').value
+  var addr1 = document.getElementById('address1').value
+  var addr2 = document.getElementById('address2').value
+  var locality = document.getElementById('locality').value
+  var upiid = document.getElementById('upi').value
   document.getElementById('amountshow').innerText =  'Amount to Pay : '+totalamount+'rs'  
   
 for(let i in nums){
@@ -81,7 +84,9 @@ for(let i in nums){
     Name : name,
     Phone : phone,
     Email : mail,
-    State : state,
+    Address1 : addr1,
+    Address2 :  addr2,
+    UPI : upiid,  
     Numbers : allnums,
     Amount : totalamount, 
   }
