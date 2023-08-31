@@ -1,0 +1,47 @@
+names_and_numbers = {
+    "Aarav Sharma": 10000,
+    "Ishita Patel": 9901,
+    "Veer Malhotra": 9802,
+    "Riya Desai": 9703,
+    "Arjun Kapoor": 9604,
+    "Nisha Reddy": 9505,
+    "Kabir Verma": 9406,
+    "Maya Singh": 9307,
+    "Vikram Mehta": 9208,
+    "Ananya Iyer": 9109,
+    "Rohan Chatterjee": 9010,
+    "Priya Bhatia": 8911,
+    "Aryan Trivedi": 8812,
+    "Tanvi Saxena": 8713,
+    "Raghav Joshi": 8614,
+    "Kavya Shah": 8515,
+    "Aditya Agrawal": 8416,
+    "Sneha Rana": 8317,
+    "Yash Khanna": 8218,
+    "Pooja Mehra": 8119,
+    "Dhruv Sengupta": 8020,
+    "Aisha Dubey": 7921,
+    "Siddharth Dube": 7822,
+    "Esha Bhandari": 7723,
+    "Neel Mallick": 7624,
+    "Sanjana Nair": 7525,
+    "Karan Mathur": 7426,
+    "Shruti Venkatesh": 7327,
+    "Abhishek Rao": 7228,
+    "Anjali Kapoor": 7129,
+    "Pranav Sharma": 7030,
+    "Sanya Patel": 6931,
+    "Arnav Kumar": 6832,
+    "Aarti Iyer": 6733,
+    "Nikhil Verma": 6634,
+    "Divya Yadav": 6535,
+    "Rohit Choudhury": 6436,
+    "Meera Agarwal": 6337,
+    "Aryan Oberoi": 6238,
+    "Riya Menon": 6139
+}
+
+tag = '<tr><td class="border px-4 py-2">{}</td><td class="border px-4 py-2">{}</td></tr>'
+
+for x in names_and_numbers:
+    print(tag.format(x,names_and_numbers[x]))
