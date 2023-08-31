@@ -8,46 +8,456 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-   
+
     <title>Today Winners</title>
 </head>
 
 <body class="flex flex-col min-h-full">
-    
-<body class="flex flex-col min-h-full"> 
-    <nav class="z-10 flex justify-center items-center bg-white sticky top-0 flex-row h-16 border-b">
-        <img class="w-9 absolute left-5 my-auto" onclick="shownav()" id="ham" src="menu.png" alt="">
-        <a href="index.html"> <img class="w-36" src="logo.png" alt=""></a>
-    </nav>
-    <ul id="navitems" class="fixed mt-16 left-0 w-full h-auto border py-5 text-center transition-all z-0 bg-white -top-full">
-        <li class="py-3"><a href="index.html">Home</a></li>
-        <li class="py-3"><a href="payment.html">Start Earning</a></li>
-        <li class="py-3"><a href="todaywinners.html">Today Winners</a></li>
-        <li class="py-3">About</li>
-    </ul>
-    <div class="w-full h-1/2 px-5">
-        <h1 class="text-2xl font-medium my-10 text-blue-950">Today Winners (date) </h1>
-        <div class="w-full my-10">
-            <h1 class="text-xl font-medium my-5">Time : 12PM</h1>
-            <table class="table-auto w-full text-left">
-                <thead>
-                    <th class="border px-4 py-2">Name</th><th class="border px-4 py-2">Amount</th>
-                </thead>
-                <!-- <tr>
+
+    <body class="flex flex-col min-h-full">
+        <nav class="z-10 flex justify-center items-center bg-white sticky top-0 flex-row h-16 border-b">
+            <img class="w-9 absolute left-5 my-auto" onclick="shownav()" id="ham" src="menu.png" alt="">
+            <a href="index.html"> <img class="w-36" src="logo.png" alt=""></a>
+        </nav>
+        <ul id="navitems"
+            class="fixed mt-16 left-0 w-full h-auto border py-5 text-center transition-all z-0 bg-white -top-full">
+            <li class="py-3"><a href="index.html">Home</a></li>
+            <li class="py-3"><a href="payment.html">Start Earning</a></li>
+            <li class="py-3"><a href="todaywinners.html">Today Winners</a></li>
+            <li class="py-3">About</li>
+        </ul>
+        <div class="w-full h-1/2 px-5">
+            <h1 class="text-2xl font-medium my-10 text-blue-950">Today Winners (date) </h1>
+            <div class="w-full my-10">
+                <h1 class="text-xl font-medium my-5">Time : 12PM</h1>
+                <table class="table-auto w-full text-left">
+                    <thead>
+                        <th class="border px-4 py-2">Name</th>
+                        <th class="border px-4 py-2">Amount</th>
+                    </thead>
+                    <!-- <tr>
                     <td class="border px-4 py-2">....</td><td class="border px-4 py-2">....</td>
                 </tr> -->
-            </table>
+                    <td class="border px-4 py-2"> Ankit</td>
+                    <td class="border px-4 py-2"> 10,005</td>
+                    <tr>
+                        <td class="border px-4 py-2"> Aman</td>
+                        <td class="border px-4 py-2"> 9,095</td>
+                    <tr>
+                        <td class="border px-4 py-2">Tushar</td>
+                        <td class="border px-4 py-2"> 9,093</td>
+                    <tr>
+                        <td class="border px-4 py-2"> Aayush</td>
+                        <td class="border px-4 py-2"> 8,995</td>
+                    <tr>
+                        <td class="border px-4 py-2">Abhishek</td>
+                        <td class="border px-4 py-2"> 7,990</td>
+                    <tr>
+                        <td class="border px-4 py-2">Aarav</td>
+                        <td class="border px-4 py-2">6,987</td>
+                    <tr>
+                        <td class="border px-4 py-2">Sahil</td>
+                        <td class="border px-4 py-2"> 5,685</td>
+                    <tr>
+                        <td class="border px-4 py-2">Pradeep</td>
+                        <td class="border px-4 py-2"> 4,980</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Naman</td>
+                        <td class="border px-4 py-2"> 3,078</td>
+                    <tr>
+                        <td class="border px-4 py-2">Sumit</td>
+                        <td class="border px-4 py-2"> 2,975</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Amit</td>
+                        <td class="border px-4 py-2"> 1,975</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Rahul</td>
+                        <td class="border px-4 py-2"> 1,973</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Om</td>
+                        <td class="border px-4 py-2">1,970</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Ishan</td>
+                        <td class="border px-4 py-2">1,968</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Rishi singh</td>
+                        <td class="border px-4 py-2">1,967</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Shankar</td>
+                        <td class="border px-4 py-2"> 1,666</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Mukesh kumar</td>
+                        <td class="border px-4 py-2"> 1,965</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Ranbir singh</td>
+                        <td class="border px-4 py-2"> 1,965</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Dilip kumar </td>
+                        <td class="border px-4 py-2"> 963</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Laksh</td>
+                        <td class="border px-4 py-2"> 962</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Sajan </td>
+                        <td class="border px-4 py-2"> 961</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Samay </td>
+                        <td class="border px-4 py-2"> 960</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Nitin</td>
+                        <td class="border px-4 py-2"> 959</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Satyam </td>
+                        <td class="border px-4 py-2">959</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Ashok kumar</td>
+                        <td class="border px-4 py-2"> 958</td>
+                    <tr>
+
+                        <td class="border px-4 py-2">Hrithik </td>
+                        <td class="border px-4 py-2"> 958</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Anil singh</td>
+                        <td class="border px-4 py-2">955</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Siddhu</td>
+                        <td class="border px-4 py-2"> 954</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Veer</td>
+                        <td class="border px-4 py-2"> 953</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Deepak</td>
+                        <td class="border px-4 py-2"> 950</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Jay</td>
+                        <td class="border px-4 py-2"> 949</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Rajesh Thakur</td>
+                        <td class="border px-4 py-2">948</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Dev </td>
+                        <td class="border px-4 py-2"> 947</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Kalpen</td>
+                        <td class="border px-4 py-2"> 945</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Manoj</td>
+                        <td class="border px-4 py-2"> 943</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Manoj</td>
+                        <td class="border px-4 py-2"> 943</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Ravi</td>
+                        <td class="border px-4 py-2"> 943</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Zayn </td>
+                        <td class="border px-4 py-2"> 943</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Rahul</td>
+                        <td class="border px-4 py-2"> 944</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Rajesh</td>
+                        <td class="border px-4 py-2"> 944</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Raju</td>
+                        <td class="border px-4 py-2"> 942</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Jaidan</td>
+                        <td class="border px-4 py-2"> 942</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Mukesh</td>
+                        <td class="border px-4 py-2"> 942</td>
+                    <tr>
+
+                        <td class="border px-4 py-2">Sandeep</td>
+                        <td class="border px-4 py-2"> 941</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Sohail</td>
+                        <td class="border px-4 py-2"> 941</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Shivam</td>
+                        <td class="border px-4 py-2"> 940</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Sonu prajapati</td>
+                        <td class="border px-4 py-2"> 939</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Lakshay</td>
+                        <td class="border px-4 py-2"> 939</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Akshay kumar</td>
+                        <td class="border px-4 py-2">939</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Mithun</td>
+                        <td class="border px-4 py-2"> 938</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Abeer</td>
+                        <td class="border px-4 py-2"> 938</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Abdul</td>
+                        <td class="border px-4 py-2">938</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Anay</td>
+                        <td class="border px-4 py-2"> 938</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Anmol</td>
+                        <td class="border px-4 py-2"> 938</td>
+                    <tr>
+                    
+                        <td class="border px-4 py-2"> Akash</td>
+                        <td class="border px-4 py-2"> 850</td>
+                    <tr>
+                        <td class="border px-4 py-2">Abhishek Sharma</td>
+                        <td class="border px-4 py-2"> 830</td>
+                    <tr>
+                        <td class="border px-4 py-2">Purav</td>
+                        <td class="border px-4 py-2">800</td>
+                    <tr>
+                        <td class="border px-4 py-2">Salim</td>
+                        <td class="border px-4 py-2"> 800</td>
+                    <tr>
+                        <td class="border px-4 py-2">Sandeep </td>
+                        <td class="border px-4 py-2"> 790</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Saman</td>
+                        <td class="border px-4 py-2"> 780</td>
+                    <tr>
+                        <td class="border px-4 py-2">Suman</td>
+                        <td class="border px-4 py-2"> 730</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Arun</td>
+                        <td class="border px-4 py-2"> 700</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Rahul Sharma</td>
+                        <td class="border px-4 py-2"> 653</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Om prakash</td>
+                        <td class="border px-4 py-2">630</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Ishan kishan</td>
+                        <td class="border px-4 py-2">600</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Isha singh</td>
+                        <td class="border px-4 py-2">590</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Monu </td>
+                        <td class="border px-4 py-2"> 580</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Shivani</td>
+                        <td class="border px-4 py-2"> 570</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Ranbir kapoor</td>
+                        <td class="border px-4 py-2">550</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Praveen </td>
+                        <td class="border px-4 py-2"> 500</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Laksh</td>
+                        <td class="border px-4 py-2">469</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Sajan singh </td>
+                        <td class="border px-4 py-2"> 450</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Saman </td>
+                        <td class="border px-4 py-2"> 430</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Nitin kumar</td>
+                        <td class="border px-4 py-2"> 420</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Shusant </td>
+                        <td class="border px-4 py-2">415</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Ashok</td>
+                        <td class="border px-4 py-2"> 400</td>
+                    <tr>
+
+                        <td class="border px-4 py-2">Salman </td>
+                        <td class="border px-4 py-2">390</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Anil kumar</td>
+                        <td class="border px-4 py-2">380</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Sidhanshu</td>
+                        <td class="border px-4 py-2"> 370</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Veer singh</td>
+                        <td class="border px-4 py-2"> 360</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Deepak kumar</td>
+                        <td class="border px-4 py-2"> 350</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Sameer </td>
+                        <td class="border px-4 py-2"> 340</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Rajesh </td>
+                        <td class="border px-4 py-2">330</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Dev kumar </td>
+                        <td class="border px-4 py-2"> 300</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Sumeet</td>
+                        <td class="border px-4 py-2"> 280</td>
+                    <tr>
+
+                        <td class="border px-4 py-2">Sachin</td>
+                        <td class="border px-4 py-2"> 270</td>
+                    <tr>
+
+                        <td class="border px-4 py-2">Mahesh</td>
+                        <td class="border px-4 py-2">260 </td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Arjun</td>
+                        <td class="border px-4 py-2"> 250</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">Mohhammad </td>
+                        <td class="border px-4 py-2"> 240</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Rohan</td>
+                        <td class="border px-4 py-2">230</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Ravi</td>
+                        <td class="border px-4 py-2"> 220</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Raman patel</td>
+                        <td class="border px-4 py-2">219</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Jaidan </td>
+                        <td class="border px-4 py-2"> 215</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Sukesh</td>
+                        <td class="border px-4 py-2"> 210</td>
+                    <tr>
+
+                        <td class="border px-4 py-2">Soodeep</td>
+                        <td class="border px-4 py-2"> 200</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Manav</td>
+                        <td class="border px-4 py-2"> 190</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Shivam sukla</td>
+                        <td class="border px-4 py-2"> 185</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Prajapati</td>
+                        <td class="border px-4 py-2"> 185</td>
+                    <tr>
+
+                        <td class="border px-4 py-2"> Shayam</td>
+                        <td class="border px-4 py-2"> 180</td>
+
+                    <tr>
+                        <td class="border px-4 py-2">  Kumar</td>
+                        <td class="border px-4 py-2">175</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Mithun singh</td>
+                        <td class="border px-4 py-2"> 175</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Abeerav</td>
+                        <td class="border px-4 py-2"> 175</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Abdul</td>
+                        <td class="border px-4 py-2">175</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Anay</td>
+                        <td class="border px-4 py-2"> 170</td>
+
+                    <tr>
+                        <td class="border px-4 py-2"> Anmol</td>
+                        <td class="border px-4 py-2"> 165</td>
+
+
+
+                </table>
+            </div>
         </div>
-        </div>
-    
-    <footer class=" w-full pb-5 px-5 h-[200px] mt-auto bg-black bottom-0">
-        <p class="text-white py-5">Note: Please Read the Terms and Conditions before doing any investments.</p>
-        <div class="flex justify-between">
-            <a class="text-sm text-red-500" href="privacy.html">Privacy Policy</a>
-            <a class="text-red-500  text-sm" href="">Terms and Services</a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
+
+        <footer class=" w-full pb-5 px-5 h-[200px] mt-auto bg-black bottom-0">
+            <p class="text-white py-5">Note: Please Read the Terms and Conditions before doing any investments.</p>
+            <div class="flex justify-between">
+                <a class="text-sm text-red-500" href="privacy.html">Privacy Policy</a>
+                <a class="text-red-500  text-sm" href="">Terms and Services</a>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 
 </html>
