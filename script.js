@@ -15,15 +15,18 @@ function shownav(){
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwMlg5mXirNd_T2YvfCQzfxk9Bl7korDom9XKD8yZehcsVaTgaCNZ6Jp-8nLi4avPmi/exec'
 
-const form = document.forms['pay-form']
 
 const senddata = (e) => {
-  
+  document.getElementById('pay-form').style.opacity = '0.2'
+  document.getElementById('loading').style.display = 'block'
   if (ams.length != 0 && nums.length != 0) { 
     localStorage.setItem('email',data.Email)
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: JSON.stringify(data)})
-    .then(response => alert("Your Order has been placed" ))
+    .then(response => {alert("Your Order has been placed" )
+    document.getElementById('loading').style.display = 'none'
+  document.getElementById('pay-form').style.opacity = '1'
+  })
     .then(() => { window.open('paymentpage.html','_self')})
     .catch(error => console.error('Error!', error.message))
   }
@@ -71,7 +74,10 @@ const selectall = (e) => {
   var name = document.getElementById('name').value
   var phone = document.getElementById('phone').value
   var mail =  document.getElementById('mail').value
-  var state = document.getElementById('state').value
+  var addr1 = document.getElementById('address1').value
+  var addr2 = document.getElementById('address2').value
+  var locality = document.getElementById('locality').value
+  var upiid = document.getElementById('upi').value
   document.getElementById('amountshow').innerText =  'Amount to Pay : '+totalamount+'rs'  
   
 for(let i in nums){
@@ -81,17 +87,18 @@ for(let i in nums){
     Name : name,
     Phone : phone,
     Email : mail,
-    State : state,
+    Address1 : addr1,
+    Address2 :  addr2,
+    UPI : upiid,  
     Numbers : allnums,
     Amount : totalamount, 
   }
   console.log(data)
 }
 
-const targetDate = new Date(); // Month is 0-based (0 = January)
-targetDate.setDate(targetDate.getDate()+1); // Set to the next day
+const targetDate = new Date(); 
+targetDate.setDate(targetDate.getDate()+1); 
 targetDate.setHours(12, 0, 0, 0);
-// Update the countdown every second
 const countdownElement = document.getElementById('countdown');
 const countdownInterval = setInterval(updateCountdown, 1000);
 

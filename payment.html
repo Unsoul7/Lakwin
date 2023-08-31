@@ -21,18 +21,23 @@
         <li class="py-3">About</li>
     </ul>
 
+    <div class="animate-spin hidden fixed top-1/2 left-1/2 z-20 w-10 h-10 border-4 border-b-0 border-r-0 border-blue-900 rounded-3xl" id="loading">
+    </div>
+
     <form class="w-full h-1/2 px-5 my-10" id="pay-form" method="post">
         <h1 class="text-2xl">Enter Information</h1>
         <input type="text" name="Name" required id="name" class=" border w-full h-10 px-6 my-2" placeholder="Full Name">
         <input type="text" name="Phone" required id="phone" class="border w-full h-10 px-6 my-2" placeholder="Phone">
         <input type="text" name="Email" required id="mail" class="border w-full h-10 px-6 my-2" placeholder="Email">
-        <input type="text" name="State" required id="state" class="border w-full h-10 px-6 my-2" placeholder="State">
+        <input type="text" name="Address 1" required id="address1" class="border w-full h-10 px-6 my-2" placeholder="Address line 1">
+        <input type="text" name="Address 2" required id="address2" class="border w-full h-10 px-6 my-2" placeholder="Address line 2">
+        <input type="text" name="Locallity" required id="locality" class="border w-full h-10 px-6 my-2" placeholder="Locallity">
+        <input type="text" name="UPI" required id="upi" class="border w-full h-10 px-6 my-2" placeholder="UPI ID">
         <div id="nafields">
             <div class="flex">
                 <input type="number" min="1" required max="100" name="Numbers" class="border w-1/2 h-10 px-6 my-2 numbers" placeholder="Number">
                 <input type="number" required name="Amount" class="border w-1/2 h-10 px-6 my-2 amount" placeholder="Amount">
             </div>
-            
         </div>
         <input type="button" onclick="addnum(event)" value="Add More">
         <p id="amountshow" class=" text-red-500"></p>
